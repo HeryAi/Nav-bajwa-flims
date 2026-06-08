@@ -281,8 +281,8 @@ body {
 
 /* Film Section */
 .films-section {
-    /* background: var(--color-black); */
-    background: #fcf7ea;
+    background: var(--color-black);
+    /* background: #fcf7ea; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -318,7 +318,7 @@ body {
     color: var(--color-gold-soft);
 }
 
-/* ===================================   CARD =================================== */
+/* ===================================   CARDS =================================== */
 
 .movie-card {
     /* background: var(--color-surface); */
@@ -326,7 +326,8 @@ body {
     border: 1px solid rgb(227, 225, 225);
     overflow: hidden;
     transition: .4s ease;
-    height: 100%;
+    /* height: 100%; */
+    height: auto;
     border-radius: 10px 0px 10px 0px;
     width: 300px;
     /* margin: 10px 0px; */
@@ -542,7 +543,7 @@ body {
 }
 
 .cta-title {
-    font-size: 75px;
+    font-size: 65px;
     font-weight: 700;
     line-height: 1;
     color: var(--color-text);
@@ -557,14 +558,29 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 320px;
-    height: 72px;
+    min-width: 300px;
+    height: 70px;
     background: var(--color-gold);
     color: #000;
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 5px;
+    transition: .3s ease;
+}
+
+.cta-btn a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    height: 70px;
+    background: var(--color-gold);
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
     transition: .3s ease;
 }
 
@@ -575,6 +591,14 @@ body {
     color: #e3ad4b;
     transform: translateY(-3px);
     border: 2px solid #e3ad4b;
+}
+
+.cta-btn a:hover {
+    background: var(--color-black-hex-bg);
+    color: #e3ad4b;
+    transform: translateY(-3px);
+    border-top: 2px solid #e3ad4b;
+
 }
 
 .cta-btn-outline {
@@ -799,13 +823,13 @@ body {
 
 .motto {
     color: var(--color-gold);
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
 }
 
 .motto-sub {
     color: var(--color-text);
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 20px;
 }
 
@@ -863,7 +887,7 @@ body {
 }
 
 .ecosystem-title {
-    font-size: 80px;
+    font-size: 50px;
     color: var(--color-text);
     font-weight: 700;
 }
@@ -876,7 +900,7 @@ body {
     max-width: 900px;
     margin: 30px auto;
     color: var(--color-muted);
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .ecosystem-tags {
@@ -904,11 +928,6 @@ body {
     cursor: pointer;
 }
 
-.cta-title {
-    font-size: 75px;
-    color: var(--color-text);
-    font-weight: 700;
-}
 
 .cta-title span {
     color: var(--color-gold);
@@ -926,12 +945,7 @@ body {
     font-size: 90px;
 }
 
-.vision-title {
-    font-size: 80px;
-}
-
 .hero-title span,
-
 .leader-content span,
 .project-card,
 .admission-title span,
@@ -953,8 +967,8 @@ body {
     max-width: 900px;
     margin: 30px auto 0;
     color: var(--color-muted);
-    font-size: 22px;
-    line-height: 1.9;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .leader-card,
@@ -971,7 +985,7 @@ body {
 
 .leader-image img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: contain;
 }
 
@@ -1005,10 +1019,14 @@ body {
 
 .hero-title,
 .apply-title,
-.vision-title,
 .contact-title .admission-title {
     color: var(--color-text);
     font-size: 75px;
+    font-weight: 700;
+}
+.vision-title{
+      color: var(--color-text);
+    font-size: 55px;
     font-weight: 700;
 }
 
@@ -1145,7 +1163,7 @@ body {
 .hero-title,
 .cta-title {
     color: var(--color-muted);
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
 }
 
@@ -1234,6 +1252,220 @@ body {
     /* background: transparent !important; */
 }
 
+
+/* slider css */
+.posters-slider {
+    width: 100%;
+    /* margin: auto; */
+}
+
+.posters-slider img {
+    width: 100%;
+    display: block;
+    height: 80vh;
+    object-fit: cover;
+    background: rgb(162, 161, 161);
+    /* animation: zoomHero 5s linear 5s; */
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+
+/* Remove default Slick arrow */
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+/* Custom arrows */
+
+.custom-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slick-prev:after,
+.slick-next:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-top: 8px solid #000;
+    border-right: 8px solid #000;
+    box-shadow: 5px -5px 3px 1px #fdc00b;
+
+}
+
+.slick-prev:after {
+    transform: rotate(-135deg);
+}
+
+.slick-next:after {
+    transform: rotate(45deg);
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #dfad15 !important;
+}
+
+.slick-dots li button:before {
+    font-size: 14px !important;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999 !important;
+
+    width: 60px;
+    height: 60px;
+
+    color: #fff !important;
+
+    border: none;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 150px !important;
+}
+
+.slick-next {
+    right: 150px !important;
+}
+
+.btn.show,
+.btn-secondary {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.text-foreground {
+    font-size: 20px;
+}
+
+/* dropdown css */
+
+
+/* Dropdown Menu */
+.custom-dropdown {
+    min-width: 320px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    margin-top: 15px !important;
+    overflow: hidden;
+}
+
+/* Items */
+.custom-dropdown .dropdown-item {
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background: linear-gradient(90deg,
+            rgba(212, 175, 55, 0.15),
+            rgba(212, 175, 55, 0.05));
+    color: #d4af37;
+    transform: translateX(8px);
+}
+
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Smooth Animation */
+.dropdown-menu {
+    animation: dropdownFade 0.3s ease;
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.read-toggle {
+    color: #d4a017;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-toggle:hover {
+    color: #b8860b;
+}
+
+.full-text {
+    line-height: 1.8;
+}
+
+/* Optional smooth effect */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    background-color: #000;
+}
+
+
+.custom-dropdown {
+    min-width: 450px;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.nav-item.dropdown:hover .custom-dropdown {
+    display: grid;
+}
+
+@media (max-width: 991.98px) {
+
+    .custom-dropdown {
+        min-width: 100%;
+        width: 100%;
+        display: block;
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 8px;
+        background: rgba(15, 15, 15, 0.98);
+    }
+
+    .custom-dropdown .dropdown-item {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .custom-dropdown .dropdown-item:hover {
+        transform: none;
+    }
+}
+
 /* ============================   RESPONSIVE ============================== */
 
 @media (max-width:1200px) {
@@ -1258,11 +1490,10 @@ body {
         margin-top: 10px;
         border-radius: 10px;
         z-index: 9999;
+        max-height: 410px;
+        overflow: scroll;
     }
 
-    /* .nav-item a {
-        color: #000 !important;
-    } */
 
     .navbar-nav {
         display: flex;
@@ -1279,8 +1510,28 @@ body {
         width: 50px;
     }
 
-    .navbar-toggler {
+    .navbar-toggler,
+    .nav-item.dropdown:hover .dropdown-menu {
         background: #ffffffc7 !important;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 22px;
+    }
+
+    .slick-prev {
+        left: 50px !important;
+    }
+
+    .slick-next {
+        right: 50px !important;
+    }
+
+    .slick-prev:after,
+    .slick-next:after {
+        width: 30px;
+        height: 30px;
     }
 
     .hero-title {
@@ -1346,8 +1597,8 @@ body {
     .cta-btn-outline {
         /* width: 100%; */
         /* min-width: auto; */
-        min-width: 200px;
-        height: 50px;
+        min-width: 190px;
+        height: 45px;
         font-size: 11px !important;
     }
 }
@@ -1486,11 +1737,11 @@ body {
     }
 
     .cta-area {
-        padding: 70px 0;
+        padding: 40px 0;
     }
 
     .cta-title {
-        font-size: 44px;
+        font-size: 34px;
         line-height: 1.2;
     }
 
@@ -1514,173 +1765,371 @@ body {
     .event-card p {
         text-align: justify;
     }
+
+    .footer-logo img {
+        width: 70px;
+    }
 }
 
-.dropdown {
-    background: transparent;
+/* ------------------------------------------------ */
 
+.banner-hero {
+    /* background: linear-gradient(rgba(0,0,0,.75),
+            rgba(0,0,0,.75)),
+        url('/images/banner-img.jpg'); */
+    background: linear-gradient(rgb(0 0 0 / 55%), rgb(0 0 0 / 62%)), url(/images/banner-img.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
 }
 
-
-/* slider css */
-.posters-slider {
-    width: 100%;
-    /* margin: auto; */
+.course-card {
+    background: #111;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    transition: .3s;
 }
 
-.posters-slider img {
-    width: 100%;
-    display: block;
-    height: 80vh;
-    object-fit: cover;
-    background: rgb(162, 161, 161);
-    /* animation: zoomHero 5s linear 5s; */
+.course-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
 }
 
-.slick-dotted.slick-slider {
-    margin-bottom: 0px !important;
+.course-card i {
+    font-size: 45px;
+    color: #d4af37;
+    margin-bottom: 15px;
 }
 
-/* Remove default Slick arrow */
-.slick-prev:before,
-.slick-next:before {
-    display: none;
+.founder-box {
+    background: #111;
+    color: #fff;
+    padding: 50px;
+    border-radius: 20px;
 }
 
-/* Custom arrows */
-
-.custom-arrow:hover {
-    transform: translateY(-50%) scale(1.1);
+.section-tag {
+    color: #d4af37;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
-.slick-prev:after,
-.slick-next:after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-top: 8px solid #000;
-    border-right: 8px solid #000;
-    box-shadow: 5px -5px 3px 1px #fdc00b;
+/*  Licensing Page CSS */
 
+.hero-title {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
 }
 
-.slick-prev:after {
-    transform: rotate(-135deg);
-}
-
-.slick-next:after {
-    transform: rotate(45deg);
-}
-
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: #dfad15 !important;
-}
-
-.slick-dots li button:before {
-    font-size: 14px !important;
-}
-
-.slick-prev,
-.slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 9999 !important;
-
-    width: 60px;
-    height: 60px;
-
-    color: #fff !important;
-
-    border: none;
-    cursor: pointer;
-}
-
-.slick-prev {
-    left: 150px !important;
-}
-
-.slick-next {
-    right: 150px !important;
-}
-
-.btn.show,
-.btn-secondary {
-    background-color: transparent !important;
-    border-color: transparent !important;
-}
-
-.text-foreground {
+.hero-subtitle {
+    color: #ddd;
     font-size: 20px;
 }
 
-/* dropdown css */
-
-/* Dropdown Button */
-.nav-dropdown-btn {
-    color: #fff !important;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 10px 18px !important;
-    border: 1px solid rgba(255, 215, 0, 0.4);
-    border-radius: 50px;
-    transition: all 0.4s ease;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-}
-
-.nav-dropdown-btn:hover {
-    color: #d4af37 !important;
-    border-color: #d4af37;
-    /* box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); */
-}
-
-/* Dropdown Menu */
-.custom-dropdown {
-    min-width: 320px;
-    border: none;
+.license-card {
+    /* background:#111; */
+    border: 1px solid rgba(255, 255, 255, .08);
+    padding: 35px;
+    text-align: center;
     border-radius: 15px;
-    padding: 10px;
-    background: rgba(15, 15, 15, 0.95);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-    margin-top: 15px !important;
-    overflow: hidden;
+    height: 100%;
+    transition: .3s;
 }
 
-/* Items */
-.custom-dropdown .dropdown-item {
-    color: #fff;
-    padding: 12px 18px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    font-weight: 500;
+.license-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
 }
 
-.custom-dropdown .dropdown-item:hover {
-    background: linear-gradient(
-        90deg,
-        rgba(212, 175, 55, 0.15),
-        rgba(212, 175, 55, 0.05)
-    );
+.license-card i {
+    font-size: 45px;
     color: #d4af37;
-    transform: translateX(8px);
+    margin-bottom: 15px;
 }
 
-/* Smooth Animation */
-.dropdown-menu {
-    animation: dropdownFade 0.3s ease;
+.film-card {
+    background: #181818;
+    border-left: 4px solid #d4af37;
+    padding: 25px;
+    border-radius: 10px;
+    height: 100%;
 }
 
-@keyframes dropdownFade {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.partner-box {
+    padding: 30px;
+}
+
+/* ------  Film Distribution  ------ */
+
+.distribution-hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, .75),
+            rgba(0, 0, 0, .75)),
+        url('/images/banners/distribution-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+}
+
+.service-card,
+.rights-card,
+.partner-card {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, .08);
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    transition: .3s;
+}
+
+.service-card:hover,
+.rights-card:hover,
+.partner-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
+
+.service-card i,
+.rights-card i,
+.partner-card i {
+    font-size: 45px;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.market-card {
+    background: #1a1a1a;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    border-left: 4px solid #d4af37;
+    font-weight: 600;
+    color: white;
+}
+
+/* ----------------  Film Production CSS -------------------- */
+
+.production-card,
+.partner-card {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+}
+
+.production-card:hover,
+.partner-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+}
+
+.production-card i,
+.partner-card i {
+    font-size: 50px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.workflow-box {
+    /* background:#111; */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.workflow-box span {
+    color: #d4af37;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.storytelling-section {
+    background: #f8f8f8;
+}
+
+.production-cta {
+    /* background:#d4af37; */
+    color: #000;
+    padding: 80px 0;
+}
+
+/* ---------- Marketing CSS --------- */
+
+
+.marketing-card,
+.partner-box,
+.feature-box,
+.strategy-card {
+    /* background:#111; */
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+}
+
+.marketing-card:hover,
+.partner-box:hover,
+.feature-box:hover,
+.strategy-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+}
+
+.marketing-card i,
+.partner-box i,
+.feature-box i {
+    font-size: 50px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.strategy-card span {
+    display: block;
+    font-size: 42px;
+    font-weight: 700;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.marketing-cta {
+    background: #d4af37;
+    color: #000;
+    padding: 90px 0;
+}
+
+/* -------------- Live Events ------------- */
+
+.event-card,
+.service-box,
+.impact-card,
+.brand-card {
+    /* background:#111; */
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+}
+
+.event-card:hover,
+.service-box:hover,
+.impact-card:hover,
+.brand-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+}
+
+.event-card i,
+.service-box i,
+.impact-card i,
+.brand-card i {
+    font-size: 50px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.live-events-cta {
+    /* background:#d4af37; */
+    color: #000;
+    padding: 90px 0;
+}
+
+.vision-section {
+    background: #f8f8f8;
+}
+
+/* ------------- Merchandising Page CSS --------------- */
+
+
+.merch-card,
+.product-box,
+.partner-box,
+.process-box {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+}
+
+.process-box h6,
+.partner-box h5 {
+    color: white;
+}
+
+.merch-card:hover,
+.product-box:hover,
+.partner-box:hover,
+.process-box:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+}
+
+.merch-card i,
+.product-box i,
+.partner-box i {
+    font-size: 50px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.process-box span {
+    display: block;
+    font-size: 42px;
+    color: #d4af37;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.merchandising-cta {
+    background: #d4af37;
+    color: #000;
+    padding: 90px 0;
+}
+
+/* ------------  NBF Talent Management ------------ */
+
+.talent-card,
+.belief-card {
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+}
+
+.talent-card:hover,
+.belief-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+}
+
+.talent-card i,
+.belief-card i {
+    font-size: 50px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.talent-cta {
+    background: #d4af37;
+    color: #000;
+    padding: 90px 0;
 }

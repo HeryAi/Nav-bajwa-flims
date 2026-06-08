@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -28,31 +29,42 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav me-4 ms-auto mb-2 mb-lg-0 text uppercase .tracking-\[0\.2em\] font-bold">
-                            <li class="nav-item ">
-                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            <li class="nav-item"> <a class="nav-link active text-white" aria-current="page"
+                                    href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./about.html">About</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./films.html">Films </a> </li>
+                            <li class=" dropdown nav-item">
+                                <a class="nav-link dropdown-toggle nav-dropdown-btn" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Divisions
+                                    <span class="bi bi-chevron-down "></span>
+                                </a>
+
+                                <ul class="dropdown-menu custom-dropdown">
+                                    <li><a class="dropdown-item" href="./Divisions/filmproduction.html">Film
+                                            Production</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/distribution.html">Film
+                                            Distribution</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/marketing.html">Marketing</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/merchandising.html">Merchandising</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./Divisions/Licensing.html">Licensing</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/school.html">Acting & Technical
+                                            School</a> </li>
+                                    <li><a class="dropdown-item" href="./Divisions/NBF-Talent.html">NBF Talent</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/brands.html">Brand Partnership</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./Divisions/Live-Events.html">Live Events</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./about.html">About</a>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./Core-Team.html">Core Team</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./films.html">Films</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./team.html">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./school.html">School</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./brands.html">Brands</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./careers.html">Careers</a>
-                            </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./News.html">News</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./careers.html">Careers</a> </li>
 
                         </ul>
                         <form class="d-flex" role="search">
-                            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
                             <button class="btn btn-outline-warning contact-btn" type="submit">
                                 <a class="nav-link" href="./contact.html">Contact</a>
                             </button>
@@ -64,48 +76,51 @@
     </section>
 
     <!-- banner section -->
-    <section class="section-layout">
+
+    <section class="banner-hero py-5 text-left">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <span class="section-label">
-                        ABOUT NAV BAJWA FILMS
-                    </span>
-                    <h1 class="hero-title">
-                        From Punjab to the World.
-                        <br>
-                        <span>Stories Without Borders.</span>
-                    </h1>
-                    <p class="hero-subtitle text-left">
-                        Established in 2016, Nav Bajwa Films is a film production and entertainment company dedicated to
-                        creating compelling stories for audiences across Pollywood, Bollywood, and international
-                        markets.
-                    </p>
-                </div>
-            </div>
+            <span class="section-tag"> ABOUT NAV BAJWA FILMS</span>
+            <h1 class="display-4 fw-bold text-white mt-3">
+                From Punjab to the World.
+                <br>
+                <span>Stories Without Borders.</span>
+            </h1>
+            <p class="lead text-light mt-3">
+                Established in 2016, Nav Bajwa Films is a film production and entertainment company dedicated to
+                creating compelling stories for audiences across Pollywood, Bollywood, and international
+                markets.
+            </p>
         </div>
     </section>
 
-    <section class="company-overview bg-theme-light">
+
+
+    <section class="company-overview bg-theme-light pt-2">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center justify-content-center">
                 <div class="col-lg-8">
                     <h2 class="section-heading"> About Us </h2>
                     <p>
-                        Nav Bajwa Films was founded with a vision to elevate Punjabi and Indian cinema beyond
-                        traditional boundaries. Since 2016, the company has been actively developing and producing
-                        content that combines strong storytelling, cultural authenticity, and global appeal.
+                        Established in 2016, Nav Bajwa Films is a film production and entertainment company dedicated to
+                        creating compelling stories for audiences across Pollywood, Bollywood, and international
+                        markets. Founded with a vision to elevate Punjabi and Indian cinema beyond traditional
+                        boundaries, the company has been actively developing and producing content that combines strong
+                        storytelling, cultural authenticity, and global appeal.
                     </p>
-                    <p>
-                        Over the years, Nav Bajwa Films has built a reputation for delivering meaningful entertainment
-                        while continuously exploring opportunities in film production, international collaborations,
-                        digital content, and global distribution.
+                    <p>Over the years, Nav Bajwa Films has built a reputation for delivering meaningful entertainment
+                        while continuously exploring new opportunities in film production, international collaborations,
+                        digital content, and global distribution. With roots firmly grounded in Punjab and a
+                        forward-looking international perspective, the company seeks to connect regional cinema with
+                        worldwide audiences.
                     </p>
-                    <p>
-                        With roots firmly grounded in Punjab and a forward-looking international perspective, the
-                        company seeks to connect regional cinema with worldwide audiences.
+                    <p>At Nav Bajwa Films, we believe cinema is more than entertainment. It is a powerful medium for
+                        cultural exchange, tourism promotion, economic growth, and creative innovation. Through feature
+                        films, digital projects, and strategic partnerships with filmmakers, studios, film commissions,
+                        distributors, and OTT platforms, we strive to create stories that resonate across cultures and
+                        generations.
                     </p>
                 </div>
+
                 <div class="col-lg-4">
                     <div class="stats-grid">
                         <div class="stat-box">
@@ -113,7 +128,7 @@
                             <span>ESTABLISHED</span>
                         </div>
                         <div class="stat-box">
-                            <h3>6+</h3>
+                            <h3>20+</h3>
                             <span>FILMS</span>
                         </div>
                         <div class="stat-box">
@@ -193,9 +208,9 @@
                 <span class="section-label">
                     WHAT WE STAND FOR
                 </span>
-                <h2 class="section-heading">
+                <!-- <h2 class="section-heading">
                     Core Values
-                </h2>
+                </h2> -->
             </div>
             <div class="row g-4">
                 <div class="col-lg-4">
@@ -232,27 +247,16 @@
         </div>
     </section>
 
-    <section class="stories-sec bg-theme-light">
-        <div class="container text-center">
-            <h2 class="motto">
-                "From Punjab to the World."
-            </h2>
-            <h3 class="motto-sub">
-                "Stories Without Borders."
-            </h3>
-        </div>
-    </section>
-
     <section class="journey-sec bg-theme-light">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-9">
-                    <span class="section-label">
-                        THE JOURNEY CONTINUES
-                    </span>
-                    <h2 class="section-heading">
-                        Building Global Cinematic Experiences
+                    <h2 class="motto">
+                        "From Punjab to the World."
                     </h2>
+                    <h3 class="motto-sub">
+                        "Stories Without Borders."
+                    </h3>
                     <p class="belief-text">
                         Since 2016, Nav Bajwa Films has been committed to transforming local stories into global
                         cinematic experiences, building meaningful connections between audiences, cultures, and
@@ -278,7 +282,6 @@
                             NAV BAJWA
                             <span>FILMS</span>
                         </h4>
-
                     </div>
                     <p class="footer-description">
                         Established 2016. A film production and entertainment company creating stories for Pollywood,

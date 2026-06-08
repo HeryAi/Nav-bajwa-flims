@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -29,31 +30,42 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul class="navbar-nav me-4 ms-auto mb-2 mb-lg-0 text uppercase .tracking-\[0\.2em\] font-bold">
-                            <li class="nav-item ">
-                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                            <li class="nav-item"> <a class="nav-link active text-white" aria-current="page"
+                                    href="index.html">Home</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./about.html">About</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./films.html">Films </a> </li>
+                            <li class=" dropdown nav-item">
+                                <a class="nav-link dropdown-toggle nav-dropdown-btn" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Divisions
+                                    <span class="bi bi-chevron-down "></span>
+                                </a>
+
+                                <ul class="dropdown-menu custom-dropdown">
+                                    <li><a class="dropdown-item" href="./Divisions/filmproduction.html">Film
+                                            Production</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/distribution.html">Film
+                                            Distribution</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/marketing.html">Marketing</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/merchandising.html">Merchandising</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./Divisions/Licensing.html">Licensing</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/school.html">Acting & Technical
+                                            School</a> </li>
+                                    <li><a class="dropdown-item" href="./Divisions/NBF-Talent.html">NBF Talent</a></li>
+                                    <li><a class="dropdown-item" href="./Divisions/brands.html">Brand Partnership</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./Divisions/Live-Events.html">Live Events</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./about.html">About</a>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./Core-Team.html">Core Team</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./films.html">Films</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./team.html">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./school.html">School</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./brands.html">Brands</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./careers.html">Careers</a>
-                            </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./News.html">News</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white" href="./careers.html">Careers</a> </li>
 
                         </ul>
                         <form class="d-flex" role="search">
-                            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
                             <button class="btn btn-outline-warning contact-btn" type="submit">
                                 <a class="nav-link" href="./contact.html">Contact</a>
                             </button>
@@ -64,31 +76,25 @@
         </header>
     </section>
 
-    <section class="section-layout pb-5">
+    <!-- banner section -->
+
+    <section class="banner-hero py-5 text-left">
         <div class="container">
-            <div class="row justify-content-center ">
-                <div class="col-lg-10">
-
-                    <span class="section-label">
-                        CAREERS AT NAV BAJWA FILMS
-                    </span>
-
-                    <h1 class="hero-title">
-                        Create The Future
-                        <span>Of Cinema.</span>
-                    </h1>
-
-                    <p class="hero-text">
-                        Join a creative team dedicated to producing impactful Punjabi and Hindi cinema
-                        with global ambitions, innovative storytelling, and world-class entertainment.
-                    </p>
-                </div>
-            </div>
+            <span class="section-tag">NAV BAJWA FILMS</span>
+            <!-- <h1 class="display-4  fw-bold text-white mt-3">
+                CAREERS 
+            </h1> -->
+            <h1 class="hero-title display-4  fw-bold text-white mt-3">
+                Create The Future
+                <span>Of Cinema.</span>
+            </h1>
+            <p class="lead text-light mt-3">Join a creative team dedicated to producing impactful Punjabi and Hindi
+                cinema
+                with global ambitions, innovative storytelling, and world-class entertainment. </p>
         </div>
     </section>
 
-
-    <section class="section-layout career-about py-5">
+      <section class="section-layout career-about py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
