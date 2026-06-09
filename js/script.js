@@ -1,4 +1,24 @@
-$(function () {
+// Banner Posters Script
+function updateBannerImages() {
+    $('.banner-img').each(function () {
+
+        if ($(window).width() <= 768) {
+            $(this).attr('src', $(this).data('mobile'));
+        } else {
+            $(this).attr('src', $(this).data('desktop'));
+        }
+
+    });
+}
+
+$(document).ready(function () {
+
+    updateBannerImages();
+
+    $(window).resize(function () {
+        updateBannerImages();
+    });
+
     $('.posters-slider').slick({
         arrows: true,
         dots: true,
@@ -6,32 +26,24 @@ $(function () {
         speed: 500,
         fade: true,
         cssEase: 'linear',
-        autoplay: false,
-        autoplaySpeed: 3000,
-
-    });
-});
-
-
-$(function () {
-    $('.posters-slider').slick({
-        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
         prevArrow: '<button type="button" class="slick-prev">❮</button>',
         nextArrow: '<button type="button" class="slick-next">❯</button>'
     });
-});
 
+});
 
 // Movies Slider JavaScript Here ---------------
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     $('.movie-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-        // speed:200,
+        autoplaySpeed: 1000,
+        speed:500,
         arrows: false,
         dots: true,
         infinite: true,
