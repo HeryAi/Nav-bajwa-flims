@@ -479,7 +479,7 @@ body {
 .service-card p {
     color: var(--color-white);
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.6;
     font-family: var(--accent-primary);
 }
 
@@ -1066,7 +1066,7 @@ body {
 .contact-text {
     color: var(--color-muted);
     font-size: 20px;
-    line-height: 1.9;
+    line-height: 1.7;
 }
 
 
@@ -1339,7 +1339,6 @@ body {
 
 /* dropdown css */
 
-
 /* Dropdown Menu */
 .custom-dropdown {
     min-width: 320px;
@@ -1473,7 +1472,43 @@ body {
     /* background: linear-gradient(rgba(0,0,0,.75),
             rgba(0,0,0,.75)),
         url('/images/banner-img.jpg'); */
-    background: url(/images/Marketing-banner.PNG);
+    background: url(/images/banners/Marketing-banner.PNG);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-banner-hero {
+    background: url(/images/banners/about-us-banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.news-banner-hero {
+    background: url(/images/banners/news-banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.Leadership-banner-hero {
+    background: url(/images/banners/Leadership-banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.careers-banner-hero {
+    background: url(/images/banners/careers-banner.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1482,7 +1517,7 @@ body {
 }
 
 .live-events-banner-hero {
-    background: url(/images/live-events-banner.jpeg);
+    background: url(/images/banners/live-events-banner.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1491,7 +1526,7 @@ body {
 }
 
 .Brand-Partnership-banner {
-    background: url(/images/Brand-Partnership-banner.jpeg);
+    background: url(/images/banners/Brand-Partnership-banner.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1500,7 +1535,7 @@ body {
 }
 
 .Talent-Management-banner {
-    background: url(/images/Talent-Management-banner.PNG);
+    background: url(/images/banners/Talent-Management-banner.PNG);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1509,16 +1544,16 @@ body {
 }
 
 .Acting-Technical-School-banner {
-    background: url(/images/Acting-Technical-School-banner.PNG);
+    background: url(/images/banners/Acting-Technical-School-banner.PNG);
     background-size: cover;
     background-position: center;
-    min-height: 70vh;
+    min-height: 68vh;
     display: flex;
     align-items: center;
 }
 
 .Licensing-banner-hero {
-    background: url(/images/Licensing-banner.PNG);
+    background: url(/images/banners/Licensing-banner.PNG);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1527,7 +1562,7 @@ body {
 }
 
 .Merchandising-banner-hero {
-    background: url(/images/Merchandising-banner.PNG);
+    background: url(/images/banners/Merchandising-banner.PNG);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1537,7 +1572,7 @@ body {
 
 .banner-hero-film-distribution {
 
-    background: url(/images/film-distribution-banner.PNG);
+    background: url(/images/banners/film-distribution-banner.PNG);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1547,7 +1582,7 @@ body {
 
 .banner-hero-film {
 
-    background: url(/images/film-production-banner.jpeg);
+    background: url(/images/banners/film-production-banner.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -1683,6 +1718,11 @@ body {
     border-left: 4px solid #d4af37;
     font-weight: 600;
     color: white;
+}
+
+.distribution-para {
+    text-align: justify;
+    padding: 0px 7px;
 }
 
 /* ----------------  Film Production CSS -------------------- */
@@ -1933,6 +1973,11 @@ body {
     transform: translateY(-10px) !important;
 }
 
+.talent-para {
+    text-align: center;
+    max-width: 900px;
+}
+
 /* ============================   RESPONSIVE ============================== */
 
 @media (max-width:1200px) {
@@ -2044,6 +2089,19 @@ body {
         text-align: justify;
     }
 
+    .service-card h4 {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .talent-para {
+        text-align: justify
+    }
+
+    .brands-list-left ul li {
+        text-align: left;
+    }
+
     .stats-grid {
         margin-top: 50px;
         display: grid;
@@ -2080,6 +2138,20 @@ body {
         min-width: 190px;
         height: 45px;
         font-size: 11px !important;
+        letter-spacing: 3px;
+    }
+
+    .banner-hero-film {
+        background-image: url('/images/mobile-banner/film-production-banner-mobile.jpg');
+        /* background-position: center center; */
+    }
+
+    .banner-hero-film-distribution {
+        background-image: url('/images/mobile-banner/film-distribution-banner-mobile.jpg');
+    }
+
+    .Merchandising-banner-hero {
+        background-image: url('/images/mobile-banner/film-distribution-banner-mobile.jpg');
     }
 }
 
@@ -2100,6 +2172,62 @@ body {
 
     .hero-description {
         font-size: 18px;
+    }
+
+    .market-card,
+    .marketing-card,
+    .strategy-card,
+    .feature-box,
+    .film-card,
+    .license-card,
+    .service-box,
+    .brand-card,
+    .impact-card {
+        padding: 12px;
+    }
+
+    .brand-card {
+        /* text-align: justify; */
+        padding: 10px 15px;
+    }
+
+    .brand-card p {
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .live-events-cta {
+        padding: 30px 7px;
+    }
+
+    .film-card h4 {
+        font-size: 18px;
+    }
+
+    .film-card p {
+        font-size: 13px;
+    }
+
+    .merchandising-cta {
+        padding: 30px 0px;
+    }
+
+    .founder-box,
+    .talent-card,
+    .belief-card {
+        padding: 20px;
+    }
+
+    .talent-cta {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .vision-text,
+    .contact-text {
+        font-size: 18px;
+        text-align: justify;
+        padding: 10px 0px;
     }
 
     /* .established span {
@@ -2195,8 +2323,14 @@ body {
     }
 
     .section-title {
-        font-size: 30px;
+        font-size: 28px;
         /* text-align: center; */
+        line-height: 1.2;
+    }
+
+    .production-card,
+    .partner-card {
+        text-align: center;
     }
 
     .about-section,
