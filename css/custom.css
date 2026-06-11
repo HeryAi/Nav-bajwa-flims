@@ -697,6 +697,26 @@ body {
     font-size: 18px;
 }
 
+.links-icon a {
+    padding: 5px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.links-icon a i {
+    /* color:  rgb(253 192 17) !important; */
+    color: white !important;
+}
+
+.links-icon a i:hover {
+    /* color: white !important; */
+    color: rgb(253 192 17) !important;
+}
+
+/* .links-icon a img {
+    padding-bottom: 20px;
+} */
+
 .para-text-small {
     font-size: 14px;
     color: var(--color-text);
@@ -1036,7 +1056,7 @@ body {
 
 .social-media-link {
     color: gray;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.1;
 }
@@ -1480,6 +1500,24 @@ body {
     align-items: center;
 }
 
+.contact-us-banner-hero {
+    background: url(/images/banners/about-us-banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.legal-banner-hero {
+    background: url(/images/banners/legal-banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
 .about-us-banner-hero {
     background: url(/images/banners/about-us-banner.jpeg);
     background-size: cover;
@@ -1735,6 +1773,7 @@ body {
     padding: 35px;
     height: 100%;
     transition: .4s;
+    text-align: center;
 }
 
 .partner-card-left {
@@ -2163,7 +2202,8 @@ body {
 
     .posters-slider img {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
+        height: 420px;
     }
 
     .hero-title {
@@ -2397,8 +2437,93 @@ body {
         text-align: center;
         padding: 15px;
     }
+    .cta-btn a{
+        min-width: 270px;
+        height: 50px;
+        border: var(--color-gold);
+    }
 }
 
 /* ------------------------------------------------ */
 
-/* Cards home page */
+/* Legal page CSS */
+
+.legal-section {
+    background: #f8f9fa;
+}
+
+.section-tag {
+    color: #c8a96b;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.legal-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: .4s ease;
+}
+
+.legal-card:hover {
+    transform: translateY(-5px);
+}
+
+.legal-card h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.legal-icon {
+    font-size: 55px;
+    color: #c8a96b;
+}
+
+.legal-card ul {
+    padding-left: 20px;
+}
+
+.legal-card li {
+    margin-bottom: 10px;
+}
+
+.disclaimer-box {
+    background: #111;
+    color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.disclaimer-box h4 {
+    color: #c8a96b;
+    margin-bottom: 15px;
+}
+
+.alert-warning {
+    border-radius: 10px;
+}
+
+@media(max-width:768px) {
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .legal-card {
+        padding: 25px;
+    }
+
+    .legal-icon {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+}
