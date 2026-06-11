@@ -2442,6 +2442,9 @@ body {
         height: 50px;
         border: var(--color-gold);
     }
+    .movie-card{
+        width: auto;
+    }
 }
 
 /* ------------------------------------------------ */
